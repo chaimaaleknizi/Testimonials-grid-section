@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body {
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.main{
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    width: 85%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+    
+}
+
+.item {
+    padding: 2.9rem;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
+
+.item1 {
+    grid-column: span 2;
+    grid-row: 1;
+    background:url("images/bg-pattern-quotation.svg") 80% 0 no-repeat ,hsl(263, 55%, 52%);
+    
+}
+
+.item2{
+    grid-column: 3;
+    grid-row: 1;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.item3 {
+    grid-column: 1;
+    grid-row: 2;
+    color: hsl(219, 29%, 14%);
+}
+
+.item4{
+    grid-column: span 2;
+    grid-row: 2;
+    background-color:hsl(219, 29%, 14%);
+}
+
+.item5{
+    grid-column: 4;
+    grid-row: span 2;
+    color: hsl(219, 29%, 14%);
+}
+
+.icon-profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.icon-profile img {
+    border-radius: 50%;
+    border: 1px solid  hsl(0, 0%, 100%);
+    margin-right: 1.5rem;
+    max-height: 4rem;
+}
+
+.name {
+   display: flex;
+   flex-direction: column;
+}
+
+.name::after{
+    content: "Verified graduate";
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+.title{
+    font-size: 2.3rem;
+    margin: 1.4rem 0;
+}
+
+.comment{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    opacity: 0.7;
+
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+
